@@ -1,0 +1,13 @@
+.containerReceitas {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+    flex-wrap: wrap;
+	gap: 10px;
+}
+
+.card:hover {
+	transform: scale(1.02);
+	transition: .2s linear;
+}
+

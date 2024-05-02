@@ -1,0 +1,111 @@
+/*	Estilos globais	*/
+:root {
+	--color-Primary: #00ff00;
+	--color-Secondary: #ff0000;
+	--color-Tertiary: #000;
+	--color-Quaternary: #fff;
+	--color-Quinary: rgb(136, 80, 73);
+	--color-Senary: #00a600;
+}
+
+
+body {
+	/* Barra de navegação */
+	::-webkit-scrollbar {
+		width: 10px;
+	};
+
+	::-webkit-scrollbar-track {
+		background: var(--color-Quinary);
+	};
+
+	::-webkit-scrollbar-thumb {
+		background: var(--color-Primary);
+		border-radius: 5px;
+	}
+
+	::selection {
+		background-color: var(--color-Senary);
+		color: var(--color-Tertiary);
+	}
+}
+
+/* Menu de navegação */
+header {
+	height: 60px;
+	background-color: var(--color-Primary);
+	
+}
+
+
+header li {
+	margin: 20px;
+	list-style: none;
+}
+
+.titulo {
+	color: var(--color-Tertiary);
+	font-weight: 900;
+	font-size: 110%;
+	text-decoration: none;
+}
+.titulo:hover {
+	border-bottom: 3px var(--color-Quaternary) solid;
+}
+.tituloAtivo {
+	color: var(--color-secondary);
+	border-bottom: 3px var(--color-Secondary) dotted;
+}
+
+
+/* Conteudo principal */
+main {
+	height: calc(100vh - 100px);
+	overflow-y: auto;
+	padding: 10px;
+}
+
+/* Input Cadastro */
+.sombra-externa {
+	box-shadow: 
+	rgba(0, 0, 0, 0.25) 0px 54px 55px,
+	rgba(0, 0, 0, 0.12) 0px -12px 30px,
+	rgba(0, 0, 0, 0.12) 0px 4px 6px,
+	rgba(0, 0, 0, 0.17) 0px 12px 13px,
+	rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sombra-interna {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+/* Rodapé  */
+footer {
+	height: 25px;
+	background-color: var(--color-Primary);
+}
+footer p {
+	text-align: center;
+	font-weight: 900;
+}
+footer p a {
+	color:var(--color-Secondary);
+	text-decoration: none;
+}
+
+footer p a:hover {
+	border-bottom: 2px var(--color-Quaternary) solid  ;
+}
+.logo {
+	height: 50px;
+	width: 50px;
+}
+.containerHome {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
